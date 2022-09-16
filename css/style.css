@@ -524,51 +524,137 @@ html, body{
         margin-top: 5rem ;
     }
 
-    .new-costomer .container .card1{
+    .new-costomer .card1{
         position: relative;
-        width: 90%;
-        margin: auto;
-        padding-right: 1rem;
-        padding: 0;
+        height: 418px;
     }
-        .new-costomer .container .card1-menu h1{
-            position: absolute;
-            color: var(--color-white);
-            top: 35%;
-            width: 90%;
-            text-align: center;
-            font-size: 5rem;
-        }
-            .new-costomer .container .card1 h1 span{
-                font-size: 3rem;           
-            }
-        .new-costomer .container .card1 p{
-            position: absolute;
-            color: var(--color-white);
-            top: 58%;
-            width: 90%;
-            text-align: center;          
-        }
-        .new-costomer .container .card1 a{
-            position: absolute;
-            display: inline;
-            top: 68%;
-            width: 49%;
-            margin-left: 4.2rem;
-        }
-    .new-costomer .container .discount-text{
-        position: absolute;
-    }
-    .new-costomer .discount-body{
-        padding-left: 30rem;
-    }
-        .new-costomer .discount-body p{
-            margin: 2rem 0;
-        }
-
     .new-costomer img{
         height: 418px;
         width: 300px;
+    }
+    .new-costomer .card1 .card1-menu{
+        position: absolute;
+        bottom: 0;
+        height: 75%;
+        width: 100%;
+        padding: 1rem;
+        text-align: center;
+    }
+        .new-costomer .card1 .card1-menu h1{
+            color: var(--color-white);
+            font-size: 5rem;
+            font-weight: var(--font-weight-bold);
+            /* font-family: var(--font-play); */
+        }
+            .new-costomer .card1 .card1-menu h1 span{
+                font-size: 2.9rem;
+                font-weight: var(--font-weight-bold); 
+                /* font-family: var(--font-play);                        */
+            }
+        .new-costomer .card1 .card1-menu p{
+            color: var(--color-white); 
+            font-family: var(--font-roboto);    
+        }
+ 
+    .new-costomer .discount-body{
+        height: 100%;
+        width: 30rem;
+        align-items: center;
+        text-align: left;
+    }
+        .new-costomer .discount-body p{
+            margin: 2rem 0;
+            font-family: var(--font-roboto);
+            font-size: 1.17rem;
+            font-weight: var(--font-weight-regular);
+        }
+
+.flash-sale{
+    background-color: var(--color-theme-dark);
+}
+    .flash-sale .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 5rem ;
+    }
+        .flash-sale .card2{
+            position: relative;
+            height: 255px;
+            margin-bottom: 8rem;
+        }
+        .flash-sale .card2 img{
+            height: 255px;
+            width: 265px;
+        }
+        .flash-sale .card2 .card2-menu{
+            position: absolute;
+            bottom: 0;
+            height: 85%;
+            width: 100%;
+            padding: 1rem;
+            text-align: center;
+        }
+            .flash-sale .card2 .card2-menu h1{
+                color: var(--color-white);
+                font-size: 3rem;
+                font-weight: var(--font-weight-bold);
+                font-family: var(--font-play);
+            }
+            .flash-sale .card2 .card2-menu p{
+                color: var(--color-white);
+                font-size: 1.17rem; 
+                font-weight: var(--font-weight-medium);
+                font-family: var(--font-roboto);
+            }
+
+        .flash-sale .flash-sale-body{
+            text-align: center;          
+        }
+        .flash-sale .flash-sale-body a{
+            margin-top: 3rem;
+        }
+
+        .flash-sale .flash-sale-timer{
+            display: flex;
+            justify-content: space-around;
+        }
+        .flash-sale .flash-sale-timer .timer{
+            position: relative;
+            height: 109px;
+        }
+        .flash-sale .flash-sale-timer .timer img{
+            height: 109px;
+            width: 109px;
+        }
+        .flash-sale .flash-sale-timer .timer .day{
+            position: absolute;
+            bottom: 0;
+            height: 80%;
+            width: 100%;
+            text-align: center;
+        }
+            .flash-sale .flash-sale-timer .timer .day h1{
+                color: var(--color-theme);
+                font-size: 2.3rem;
+                font-weight: var(--font-weight-bold);
+                margin-bottom: 0;
+            }
+            .flash-sale .flash-sale-timer .timer .day p{
+                color: var(--color-theme-dark);
+            }
+
+
+
+
+
+
+    .flash-sale .flash-sale-body{
+        height: 100%;
+        width: 30rem;  
+    }
+    .flash-sale .flash-sale-body p{
+        color: var(--color-white);
     }
 
 @media (min-width:578px){
