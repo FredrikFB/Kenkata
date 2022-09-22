@@ -10,7 +10,7 @@
     <link href="css/style.css" rel="stylesheet" >
 </head>
 <body>
-    <header class="">
+    <header>
         <div class="top-menu">
             <div class="container">
                 <div class="site-settings">
@@ -55,9 +55,14 @@
                 <div class="brand">
                     <a href="index.html"><img src="images/logotype.svg" alt="kenkata logo"></a>
                 </div>
-                <div class="search"></div>
+                <div class="search">
+                    <form id="searchboxForm">
+                        <input id="query" type="text" placeholder="search products...">
+                        <button type="submit"><i class="fa-regular fa-magnifying-glass"></i></button>
+                    </form>
+                </div>
                 <div class="menu-links">
-                    <a class="menu-link" href="#"><i class="fa-regular fa-user me-2"></i> My account</a>
+                    <a class="menu-link" href="account.html"><i class="fa-regular fa-user me-2"></i> My account</a>
                     <a class="menu-link" href=""><i class="fa-regular fa-heart "></i></a>
                     <a class="menu-link" href=""><i class="fa-regular fa-shuffle"></i></a>
                     <a id="cart" class="menu-link" href="">
@@ -483,30 +488,30 @@
             </div>
             <div class="flash-sale-body">
                 <div class="flash-sale-timer">
-                    <div class="timer">
+                    <div class="time-left">
                         <img src="images/white-cogwheel.png" alt="">
-                        <div class="day">
+                        <div class="timer">
                             <h1>7</h1>
                             <p>Days</p>
                         </div>
                     </div>
-                    <div class="timer">
+                    <div class="time-left">
                         <img src="images/white-cogwheel.png" alt="">
-                        <div class="day">
+                        <div class="timer">
                             <h1>23</h1>
                             <p>Hours</p>
                         </div>
                     </div>
-                    <div class="timer">
+                    <div class="time-left">
                         <img src="images/white-cogwheel.png" alt="">
-                        <div class="day">
+                        <div class="timer">
                             <h1>46</h1>
                             <p>Minuts</p>
                         </div>
                     </div>
-                    <div class="timer">
+                    <div class="time-left">
                         <img src="images/white-cogwheel.png" alt="">
-                        <div class="day">
+                        <div class="timer">
                             <h1>12</h1>
                             <p>seconds</p>
                         </div>
@@ -526,7 +531,7 @@
                 <p>Check out our weekly top sellers in all category</p>
             </div>
 
-            <div class="grid">
+            <div class="grid mb-5">
 
                 <div id="topseller-card-lg"class="card h-100">
                     <ul class="card-menu">
@@ -555,7 +560,7 @@
                     <div class="card-background"></div>
                 </div>
 
-                <div id="topseller-card2" class="navel">
+                <div id="topseller-card2" class="accessories">
                     <div class="card h-100">
                         <ul class="card-menu">
                             <li><i class="fa-solid fa-circle instock"></i></li>
@@ -584,7 +589,7 @@
                     </div>
                 </div>
 
-                <div id="topseller-card3" class="navel">
+                <div id="topseller-card3" class="accessories">
                     <div class="card h-100">
                         <ul class="card-menu">
                             <li><i class="fa-solid fa-circle outofstock"></i></li>
@@ -616,8 +621,23 @@
             </div>
         </div>
 
- 
     </section>
+
+    <footer class="subscribe mt-5">
+        <div class="container">
+            <div class="subscribe-body">
+                <h1>SUBSCRIBE <strong>NOW</strong></h1>
+                <p>Signup for awesome news about our new products and know our special discounts on products.</p>
+                <!-- <a href="#" class="btn btn-lg btn-white">SHOP NOW</a> -->
+            </div>
+            <img src="images/rectangle-grey.png" alt="two people standing">
+        </div>
+
+        <div class="copyright">
+            <div class="container">© Copyright 2022 Kenkata</div>
+        </div>
+    </footer>
+
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script src="script.js"></script>
