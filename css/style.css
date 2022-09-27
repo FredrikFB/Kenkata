@@ -773,6 +773,7 @@ a:hover {
             .top-sellers .new-arrivals .card:hover .card-background{
                 height: 100%;
             }
+
         /* kort nummer 2 och 3 */
         .top-sellers .accessories .card img{
             height: 550px;
@@ -780,6 +781,7 @@ a:hover {
         .top-sellers .new-arrivals .grid > .accessories .card .card-body{
             text-align: left;
             height: 15%;
+            pointer-events: none;
         }
             .top-sellers .new-arrivals .grid > .accessories .card:hover .card-body{
                 height: 45%;
@@ -816,10 +818,7 @@ a:hover {
         align-items: center;
     }
     .subscribe .subscribe-body{
-        flex: 1;
-        /* margin-right: 5rem; */
-        /* padding-right: 8rem; */
-        border: 1px solid red;  
+        flex: 1; 
     }
 
         .subscribe .subscribe-body h1{
@@ -833,14 +832,34 @@ a:hover {
             }
         .subscribe .subscribe-body p{
             font-size: 1rem;
-            padding-right: 15rem;
+            padding-right: 10rem;
+        }
+
+        .subscribe .subscribe-body #subscribebox{
+            position: relative;
+            height: 50px;
+            margin: auto;
+        }
+        .subscribe .subscribe-body #subscribebox input{
+            position: absolute;
+            border-radius: var(--border-radius-medium);
+            height: 100%;
+            width: 70%;
+            outline: none;
+            border: 1px solid var(--color-grey-2);
+            font-size: 1rem;
+            padding-left: 1rem;
+        }
+        .subscribe .subscribe-body #subscribebox button{
+            position: absolute;
+            top: 5px;
+            right: 200px;
+            height: 80%;
         }
 
     .subscribe img{
         flex: 1;
         height: 313px;
-        /* margin-left: 2rem; */
-        /* width: 300px; */
     }
 
 
@@ -853,7 +872,7 @@ a:hover {
     }
 
 
-/* sida 2 */
+/* page 2 My account/forms */
 .site-title{
     background-color: var(--color-theme-dark-light);
     color: var(--color-white);
