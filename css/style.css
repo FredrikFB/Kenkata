@@ -165,6 +165,10 @@ a:hover {
                 box-shadow: 0 0 2px 0 var(--color-theme-dark);
             }
 
+.custom-tooltip {
+    --bs-tooltip-bg: var(--color-theme);
+    --bs-tooltip-opacity: none;
+}
 /* top-menu */
 .top-menu{
     background-color: var(--color-theme);
@@ -268,7 +272,7 @@ a:hover {
                 position: absolute;
                 border-radius: var(--border-radius-medium);
                 height: 100%;
-                width: 90%;
+                width: 100%;
                 outline: none;
                 border: 1px solid var(--color-grey-2);
                 font-size: 1rem;
@@ -277,7 +281,7 @@ a:hover {
             .main-menu .search #searchboxForm button{
                 position: absolute;
                 top: 0;
-                right: 45px;
+                right: -2px;
                 width: 50px;
                 height: 100%;
                 background-color: var(--color-theme);
@@ -290,7 +294,7 @@ a:hover {
                 background-color: var(--color-theme-dark);
             }
 
-    .main-menu .links{
+    .main-menu .menu-links{
         flex: 3;
         display: flex;
         justify-content: end;
@@ -328,8 +332,8 @@ a:hover {
                 }
 
     .main-menu nav{
-        border-top: solid var(--color-grey-4);
-        border-bottom: solid var(--color-grey-4);
+        border-top: solid var(--color-lightgrey);
+        border-bottom: solid var(--color-lightgrey);
     }
         .main-menu > nav > .container{
             display: flex;
@@ -636,12 +640,11 @@ a:hover {
             color: var(--color-white);
             font-size: 5rem;
             font-weight: var(--font-weight-bold);
-            /* font-family: var(--font-play); */
         }
             .new-costomer .card1 .card1-menu h1 span{
                 font-size: 2.9rem;
                 font-weight: var(--font-weight-bold); 
-                /* font-family: var(--font-play);                        */
+                font-family: var(--font-play);                       
             }
         .new-costomer .card1 .card1-menu p{
             color: var(--color-white); 
@@ -701,11 +704,11 @@ a:hover {
             }
 
         .flash-sale .flash-sale-body{
-            text-align: center;          
+            text-align: center;
         }
-        .flash-sale .flash-sale-body a{
-            margin-top: 3rem;
-        }
+            .flash-sale .flash-sale-body a{
+                margin-top: 3rem;
+            }
 
         .flash-sale .flash-sale-timer{
             display: flex;
@@ -713,12 +716,15 @@ a:hover {
         }
         .flash-sale .flash-sale-timer .time-left{
             position: relative;
-            height: 109px;
+            width: 100px;
+            height: 100px;
+            background-color: var(--color-white);
+            outline: 3px dashed var(--color-theme);
+            border-radius: 50%;
+            margin: 0 0.5rem;
+            line-height: 0;
         }
-        .flash-sale .flash-sale-timer .time-left img{
-            height: 109px;
-            width: 109px;
-        }
+
         .flash-sale .flash-sale-timer .time-left .timer{
             position: absolute;
             bottom: 0;
@@ -736,13 +742,6 @@ a:hover {
                 color: var(--color-theme-dark);
             }
 
-    .flash-sale .flash-sale-body{
-        height: 100%;
-        width: 30rem;  
-    }
-    .flash-sale .flash-sale-body p{
-        color: var(--color-white);
-    }
 
 /* Top seller */
 
@@ -950,20 +949,30 @@ a:hover {
     column-gap: 2rem;
 }
     .external-socialmedia-buttons .facebook-button{
+        text-align: left;
+    }
+    .external-socialmedia-buttons .facebook-button button{
         background-image: url(../images/buttons/facebook-login-button.svg);
         background-repeat: no-repeat;
         border: none;
         height: 42px;
         width: 235px;
     }
-     /*5:05:00 video  */
     .external-socialmedia-buttons .google-button{
+        text-align: right;
+    }
+    
+    .external-socialmedia-buttons .google-button button{
         background-image: url(../images/buttons/google-login-button.svg);
         background-repeat: no-repeat;
         border: none;
         height: 42px;
         width: 235px;
     }
+        .external-socialmedia-buttons .facebook-button button:hover,
+        .external-socialmedia-buttons .google-button button:hover{
+            filter: brightness(90%);
+        }
 
 
 
